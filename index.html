@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>श्री श्री 108 काली पूजा समिति, आदमपुर | 2026</title>
+<style>
+:root{--red:#8e1515;--gold:#f5c451;--cream:#fff8e8;--ink:#2b1c12;--green:#176b42}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:#fff8e8;color:var(--ink)}
+header{background:linear-gradient(135deg,#7b1111,#bd3b20);color:white;text-align:center;padding:28px 16px;border-bottom:5px solid var(--gold)}
+header .om{font-size:34px}h1{font-size:clamp(22px,5vw,36px);margin:8px 0}header p{margin:6px 0}
+.wrap{max-width:1050px;margin:auto;padding:18px}.notice{background:#fff0c9;border:1px solid #e8c66c;border-radius:12px;padding:12px;margin-bottom:16px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:12px}.card{background:white;border:1px solid #f0dfc0;border-radius:14px;padding:16px;box-shadow:0 3px 12px #5a2d1010}.card small{color:#765d49}.amount{font-size:24px;font-weight:700;margin-top:8px;color:var(--red)}
+h2{color:var(--red);margin-top:26px}.tablewrap{overflow:auto;background:white;border-radius:12px;border:1px solid #ead9bc}
+table{border-collapse:collapse;width:100%;min-width:600px}th,td{padding:11px;border-bottom:1px solid #eee;text-align:left}th{background:#fff0cf}
+footer{text-align:center;padding:22px;color:#745f4c;font-size:13px}
+.lang{display:flex;justify-content:flex-end;margin-bottom:10px}button{background:var(--red);color:white;border:0;border-radius:8px;padding:10px 14px;cursor:pointer}
+@media(max-width:500px){.wrap{padding:12px}.card{padding:13px}.amount{font-size:21px}}
+</style></head>
+<body>
+<header><div class="om">🪔 जय माँ काली 🪔</div><h1>श्री श्री 108 काली पूजा समिति, आदमपुर</h1><p>Kali Puja 2026 • Public Accounts / सार्वजनिक हिसाब</p></header>
+<main class="wrap">
+<div class="lang"><button onclick="toggleLang()">हिंदी / English</button></div>
+<div class="notice" id="notice">यह सार्वजनिक डेमो पेज है। वास्तविक आँकड़े दिखाने के लिए एडमिन द्वारा जोड़े गए रिकॉर्ड और सुरक्षित डेटा कनेक्शन की आवश्यकता है।</div>
+<section class="cards">
+<div class="card"><small id="l1">कुल चंदा</small><div class="amount" id="totalIn">₹0</div></div>
+<div class="card"><small id="l2">कुल खर्च</small><div class="amount" id="totalOut">₹0</div></div>
+<div class="card"><small id="l3">बची हुई राशि / कमी</small><div class="amount" id="balance">₹0</div></div>
+<div class="card"><small id="l4">आज का चंदा</small><div class="amount" id="todayIn">₹0</div></div>
+<div class="card"><small id="l5">आज का खर्च</small><div class="amount" id="todayOut">₹0</div></div>
+</section>
+<h2 id="donTitle">चंदे का विवरण</h2><div class="tablewrap"><table><thead><tr><th>तारीख</th><th>नाम</th><th>रसीद नं.</th><th>तरीका</th><th>राशि</th></tr></thead><tbody id="donations"><tr><td colspan="5">अभी कोई रिकॉर्ड नहीं जोड़ा गया है।</td></tr></tbody></table></div>
+<h2 id="expTitle">खर्च का विवरण</h2><div class="tablewrap"><table><thead><tr><th>तारीख</th><th>खर्च का विवरण</th><th>बिल नं.</th><th>राशि</th></tr></thead><tbody id="expenses"><tr><td colspan="4">अभी कोई खर्च दर्ज नहीं है।</td></tr></tbody></table></div>
+<footer>श्री श्री 108 काली पूजा समिति, आदमपुर • काली पूजा 2026</footer>
+</main>
+<script>
+let english=false;
+function toggleLang(){english=!english;
+document.querySelector('header h1').textContent=english?'Shri Shri 108 Kali Puja Samiti, Adampur':'श्री श्री 108 काली पूजा समिति, आदमपुर';
+document.querySelector('header p').textContent=english?'Kali Puja 2026 • Public Accounts':'Kali Puja 2026 • सार्वजनिक हिसाब';
+document.getElementById('l1').textContent=english?'Total donations':'कुल चंदा';
+document.getElementById('l2').textContent=english?'Total expenses':'कुल खर्च';
+document.getElementById('l3').textContent=english?'Balance / shortfall':'बची हुई राशि / कमी';
+document.getElementById('l4').textContent=english?"Today's donations":'आज का चंदा';
+document.getElementById('l5').textContent=english?"Today's expenses":'आज का खर्च';
+document.getElementById('donTitle').textContent=english?'Donation details':'चंदे का विवरण';
+document.getElementById('expTitle').textContent=english?'Expense details':'खर्च का विवरण';
+document.getElementById('notice').textContent=english?'This is a public demo page. To show real figures, records must be entered by the admin and connected through a secure data source.':'यह सार्वजनिक डेमो पेज है। वास्तविक आँकड़े दिखाने के लिए एडमिन द्वारा जोड़े गए रिकॉर्ड और सुरक्षित डेटा कनेक्शन की आवश्यकता है।';
+}
+</script></body></html>
